@@ -1,0 +1,1 @@
+New-AzVm -ResourceGroupName learn-27ef264a-63e6-4b1c-bf18-7474be71e117 -Name "testvm-weu-01" -Credential (Get-Credential) -Location "westeurope" -Image UbuntuLTS -OpenPorts 22 -PublicIpAddressName "testvm-weu-01"
