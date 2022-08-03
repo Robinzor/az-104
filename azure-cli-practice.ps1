@@ -12,3 +12,10 @@ az appservice plan create --name $AZURE_APP_PLAN --resource-group $RESOURCE_GROU
 
 #  list serviceplan
 az appservice plan list --output table
+
+#! create resource group
+az storage account create \
+--name  mslearn$RANDOM \
+--resource-group learn-e475b61c-0cdd-429c-bf50-2d25e351cf2b \
+--sku Standard_GRS \
+--kind StorageV2
